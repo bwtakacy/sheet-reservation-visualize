@@ -1,0 +1,19 @@
+<table border>
+<tr><th>項目</th></tr>
+<tr><td id="t_color1">8888</td></tr>
+<tr><td id="t_color2">9999</td></tr>
+<tr><td id="t_color3">8888</td></tr>
+<tr><td id="t_color4">9999</td></tr>
+<tr><td id="t_color5">1111</td></tr>
+</table>
+
+<script type="text/javascript">
+for(i=1;i<=5;i++){
+if(document.getElementById("t_color"+i).innerHTML=="8888"){
+document.getElementById("t_color"+i).style.backgroundColor='red';
+}
+if(document.getElementById("t_color"+i).innerHTML=="9999"){
+document.getElementById("t_color"+i).style.backgroundColor='blue';
+}
+}
+</script>
