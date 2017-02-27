@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="description" content="Columns のデモでーす。">
-<title>Columns - jQueryプラグイン</title>
+<meta name="description" content="ラボ自習室　座席予約状況">
+<title>ラボ自習室　座席利用状況</title>
 <link id="style" href="css/classic.css" rel="stylesheet" media="screen">
 </head>
 <body>
-<h1>Columns のデモでーす。</h1>
-<div id="example2"></div>
+<h1>2017/02/28(Tue.)</h1>
+<div id="seats"></div>
  
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="js/jquery.columns.min.js"></script>
@@ -19,8 +19,21 @@
       url:'json/seat.json',
       dataType: 'json', 
       success: function(json) { 
-          example2 = $('#example2').columns({
+          seats = $('#seats').columns({
               data:json, 
+              schema:[
+                  {"header":"座席", "key":"自習席"},
+                  {"header":"16:30 ~ 17:00", "key":"16:30 ~ 17:00"},
+                  {"header":"17:00 ~ 17:30", "key":"17:00 ~ 17:30"},
+                  {"header":"17:30 ~ 18:00", "key":"17:30 ~ 18:00"},
+                  {"header":"18:00 ~ 18:30", "key":"18:00 ~ 18:30"},
+                  {"header":"18:30 ~ 19:00", "key":"18:30 ~ 19:00"},
+                  {"header":"19:00 ~ 19:30", "key":"19:00 ~ 19:30"},
+                  {"header":"19:30 ~ 20:00", "key":"19:30 ~ 20:00"},
+                  {"header":"20:00 ~ 20:30", "key":"20:00 ~ 20:30"},
+                  {"header":"20:30 ~ 21:00", "key":"20:30 ~ 21:00"},
+                  {"header":"21:00 ~ 21:30", "key":"21:00 ~ 21:30"}
+                  ]
           }); 
       }
   }); 
