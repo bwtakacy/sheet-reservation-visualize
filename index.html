@@ -1,19 +1,19 @@
 <table border>
-<tr><th>項目</th></tr>
-<tr><td id="t_color1">8888</td></tr>
-<tr><td id="t_color2">9999</td></tr>
-<tr><td id="t_color3">8888</td></tr>
-<tr><td id="t_color4">9999</td></tr>
-<tr><td id="t_color5">1111</td></tr>
+<tr><th>座席</th><th align="center">16:30-17:00</th><th align="center">17:00-17:30</th><th align="center">17:30-18:00</th><th align="center">18:00-18:30</th><th align="center">18:30-19:00</th><th align="center">19:00-19:30</th><th align="center">19:30-20:00</th><th align="center">20:00-20:30</th><th align="center">20:30-21:00</th></tr>
+<tr><td>平机1</td><td id="t_color1" align="center">x</td><td id="t_color6" align="center">x</td></tr>
+<tr><td>平机2</td><td id="t_color2" align="center">-</td><td id="t_color7" align="center">x</td></tr>
+<tr><td>平机3</td><td id="t_color3" align="center">-</td><td id="t_color8" align="center">x</td></tr>
+<tr><td>平机4</td><td id="t_color4" align="center">x</td><td id="t_color9" align="center">x</td></tr>
+<tr><td>平机5</td><td id="t_color5" align="center">-</td><td id="t_color10" align="center">x</td></tr>
 </table>
 
 <script type="text/javascript">
-for(i=1;i<=5;i++){
-if(document.getElementById("t_color"+i).innerHTML=="8888"){
+for(i=1;i<=20;i++){
+if(document.getElementById("t_color"+i).innerHTML=="x"){
 document.getElementById("t_color"+i).style.backgroundColor='red';
 }
-if(document.getElementById("t_color"+i).innerHTML=="9999"){
-document.getElementById("t_color"+i).style.backgroundColor='blue';
+if(document.getElementById("t_color"+i).innerHTML=="-"){
+document.getElementById("t_color"+i).style.backgroundColor='aqua';
 }
 }
 </script>
